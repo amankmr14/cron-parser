@@ -13,7 +13,9 @@ const arrayOfCrons = [
 ];
 
 // Iterate over each cron expression and parse it
-arrayOfCrons.forEach(cron => console.log(parseCron(cron)));
+let resultArr = arrayOfCrons.map(cron => parseCron(cron));
+
+console.log(resultArr)
 
 /**
  * Parses a cron string and generates a human-readable description.
